@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMA XYZ</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Gaya khusus untuk bagian Kebijakan Sekolah */
+        section#policies {
+            background-color: #f8f9fa;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
+
+        section#policies h2 {
+            color: #3498db;
+            font-size: 36px;
+            margin-bottom: 20px;
+            text-align: center;
+            grid-column: span 2;
+        }
+
+        section#policies subsection {
+            background-color: #fff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        section#policies h3 {
+            color: #3498db;
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        section#policies p {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.6;
+            flex-grow: 1;
+        }
+
+        section#policies img {
+            width: 100%;
+            max-height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        /* Hover effect on subsection */
+        section#policies subsection:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Responsiveness */
+        @media only screen and (max-width: 768px) {
+            section#policies {
+                padding: 20px;
+                margin-bottom: 20px;
+                grid-template-columns: 1fr;
+            }
+
+            section#policies h2 {
+                grid-column: auto;
+            }
+        }
+
+        /* Animasi saat halaman dimuat ulang */
+        body {
+            opacity: 0;
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>SMA XYZ</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#about">Tentang Kami</a></li>
+                <li><a href="#courses">Program Studi</a></li>
+                <li><a href="#admissions">Pendaftaran</a></li>
+                <li><a href="#administration">Administrasi</a></li>
+                <li><a href="#activities">Kegiatan</a></li>
+                <li><a href="#calendar">Kalender Akademik</a></li>
+                <li><a href="#news">Berita</a></li>
+                <li><a href="#gallery">Galeri</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="policies">
+        <h2>Kebijakan Sekolah</h2>
+
+        <subsection id="discipline-policy">
+            <h3>Kebijakan Disiplin</h3>
+            <img src="placeholder-discipline.jpg" alt="Kebijakan Disiplin">
+            <p>
+                Kami memiliki kebijakan disiplin yang ketat untuk menciptakan lingkungan belajar yang aman dan positif.
+                Siswa diharapkan untuk mengikuti peraturan dan norma-norma yang ditetapkan untuk mendukung keberhasilan
+                akademis dan perkembangan pribadi.
+            </p>
+        </subsection>
+
+        <subsection id="attendance-policy">
+            <h3>Kebijakan Kehadiran</h3>
+            <img src="placeholder-attendance.jpg" alt="Kebijakan Kehadiran">
+            <p>
+                Kehadiran yang baik sangat penting untuk keberhasilan belajar. Kami mengharapkan semua siswa untuk
+                hadir secara teratur dan memberikan pemberitahuan jika ada keadaan darurat atau alasan khusus untuk
+                absen.
+            </p>
+        </subsection>
+
+        <subsection id="payment-policy">
+            <h3>Kebijakan Pembayaran</h3>
+            <img src="placeholder-payment.jpg" alt="Kebijakan Pembayaran">
+            <p>
+                Untuk memastikan kelangsungan operasional sekolah, kami memiliki kebijakan pembayaran yang jelas.
+                Biaya sekolah, biaya ekstrakurikuler, dan biaya lainnya diatur dengan rinci, dan kami menyediakan
+                bantuan keuangan bagi mereka yang memerlukan.
+            </p>
+        </subsection>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 SMA XYZ. Hak Cipta Dilindungi.</p>
+    </footer>
+
+</body>
+
+</html>
