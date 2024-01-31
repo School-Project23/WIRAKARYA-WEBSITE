@@ -284,6 +284,15 @@
     border-radius: 15px;
   }
 
+  .subjects a {
+    font-size: 14px;
+    text-align: center;
+    
+    padding: 18px 36px;
+  
+  
+  }
+
 
 
 }
@@ -550,6 +559,15 @@
     max-width: 600px;
     width: 300px;
     
+  }
+
+  .subjects a {
+    font-size: 13px;
+    text-align: center;
+    
+    padding: 17px 34px;
+  
+  
   }
 
 
@@ -937,10 +955,18 @@
     margin: 0;
     display: block;
   }
+  .subjects a {
+    font-size: 12px;
+    text-align: center;
+    
+    padding: 14px 30px;
+  
+  
+  }
 }
 
 
-@media (max-width:450px) {
+@media (max-width:520px) {
   html {
     font-size: 50%;
   }
@@ -1071,10 +1097,7 @@
 
 
 
-  .subjects a {
-    font-size: 10px;
-    padding: 10px 20px;
-  }
+
 
   /* about end*/
 
@@ -1275,14 +1298,13 @@
   }
 
   .subjects a {
-    font-size: 8px;
+    font-size: 11px;
     text-align: center;
-    color: #0066cc;
-    padding: 6px 12px;
-
-
+    
+    padding: 13px 29px;
+  
+  
   }
-
   .subjects a:hover {
     color: rgb(0, 60, 255);
   }
