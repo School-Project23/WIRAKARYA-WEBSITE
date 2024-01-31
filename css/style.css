@@ -57,6 +57,7 @@ section {
   letter-spacing: .4rem;
   text-align: center;
   margin-bottom: 3rem;
+  animation: top 0.8s ease;
 }
 
 
@@ -84,6 +85,7 @@ section {
   z-index: 1;
   border-radius: .5rem;
   margin: 20px 0;
+  animation: fade 1s ease-in;
 }
 
 .btn::before {
@@ -167,6 +169,7 @@ section {
   font-size: 2.5rem;
   font-weight: bolder;
   color: var(--black);
+  animation: fade 1s ease-in;
 }
 
 .header .logo i {
@@ -174,11 +177,16 @@ section {
   padding-right: .5rem;
 }
 
+.header .navbar {
+  animation: right 0.8s ease-out;
+}
+
 .header .navbar a {
   font-size: 1.7rem;
   color: var(--black);
   margin: 0 1rem;
   padding-block: 1rem;
+
 }
 
 .header .navbar a:hover,
@@ -295,6 +303,7 @@ section {
 
 .home .content h3 {
   font-size: 5rem;
+  animation: left 0.8s ease;
   color: var(--white);
   line-height: 1.2;
 }
@@ -310,6 +319,7 @@ section {
   line-height: 2;
   color: var(--white);
   padding: 1rem 0;
+  animation: left 0.8s ease;
 }
 
 /* ends */
@@ -330,7 +340,7 @@ section {
   position: relative;
   flex: 1 1 40rem;
   padding: 20px 20px;
-
+  animation: left 0.8s ease;
 }
 
 .about .container .about-image img {
@@ -358,7 +368,7 @@ section {
 .about .container .about-content {
   flex: 1 1 50rem;
   padding-left: 2.5rem;
-
+  animation: right 0.8s ease;
 }
 
 .about .container .about-content h3 {
@@ -416,7 +426,7 @@ section {
   display: flex;
   flex-direction: row;
   padding: 30px 150px;
-  align-items: start;
+  align-items: flex-start;
   gap: 50px;
   border-bottom: 5px solid rgb(220, 220, 220);
 }
@@ -426,10 +436,9 @@ section {
 }
 
 .feature .box-feature .feature-photo img {
-  width: 250px;
-  max-width: 400px;
-
-
+  width: 700px;
+  max-width: 1000px;
+  height: auto;
 }
 
 .feature .box-feature .feature-info {
@@ -497,7 +506,7 @@ section {
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   gap: 3rem;
   margin-bottom: 10px;
-
+  animation: fade 1s ease-in;
 }
 
 .subjects .box-container .box {
@@ -548,6 +557,7 @@ section {
   letter-spacing: .4rem;
   text-align: center;
   margin: 3rem 0;
+  animation: bounce 0.8s ease-in;
 }
 
 
@@ -848,7 +858,7 @@ section {
   display: flex;
   flex-direction: column;
   padding: 0 80px;
- 
+  animation: fade 1s ease-in;
 }
 
 .blog .box-container {
@@ -926,15 +936,6 @@ section {
   padding: 1rem 0;
 }
 
-@keyframes rotate360 {
-  0% {
-    transform: rotate(0);
-  }
-
-  100% {
-    transform: rotate(1turn);
-  }
-}
 
 .review .slide .fa-quote-right {
   position: absolute;
@@ -991,6 +992,7 @@ section {
 
 .contact .row .image {
   flex: 1 1 40rem;
+  animation: left 0.8s ease-in;
 }
 
 .contact .row .image img {
@@ -1001,6 +1003,7 @@ section {
   flex: 1 1 40rem;
   border: 0.1rem solid var(--primary-color);
   padding: 2rem;
+  animation: right 0.8s ease-in;
 }
 
 .contact .row form h3 {
@@ -1033,12 +1036,14 @@ section {
 .footer {
   background: var(--secondary);
   text-align: center;
+  animation: bottom 0.8s ease-out;
 }
 
 .footer .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   gap: 2rem;
+  animation: fade 1.5s ease-in
 }
 
 .footer .box-container .box h3 {
@@ -1132,10 +1137,10 @@ section {
 }
 
 .jogja-blog .jogja img {
-  max-width: 1000px;
+  max-width: 1400px;
   padding: 50px 0;
 
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.12);
+
 }
 
 .link {
@@ -1161,6 +1166,7 @@ section {
 
   transition: transform 0.3s ease-in-out;
   margin-bottom: 30px;
+  animation: fade 1s ease-in;
 }
 
 .administration:hover {
@@ -1242,3 +1248,95 @@ section {
 }
 
 /* media queries */
+
+.left {
+    animation: left 0.8s ease-in;
+}
+
+.top {
+  animation: top 0.8s ease-in;
+}
+
+@keyframes top {
+  0% {
+    transform: translateY(-100px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes rotate360 {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes left {
+  0% {
+    transform: translateX(-50px);
+  }
+
+  100% {
+    transform: translateX (0px);
+  }
+}
+
+@keyframes textBlink {
+  0%, 100% {
+    color: white;
+  }
+
+  50% {
+    color: #198cff;
+  }
+}
+
+@keyframes right {
+  0% {
+    transform: translateX(50px);
+  }
+
+  100% {
+    transform: translateX (0px);
+  }
+}
+
+@keyframes bottom {
+  0% {
+    transform: translateY(100px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0%,50% {
+    transform: translateY(-10px);
+  }
+
+  25%,75% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(0%S);
+  }
+}
